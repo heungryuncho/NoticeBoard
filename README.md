@@ -8,7 +8,7 @@
 ## 소개
 스프링부트 배운 것을 연습하기 위해 게시판API 만들기를 진행하였습니다.  
 클론 코딩을 통해 만들어 보았는데 작성되어있는 코드를 나름대로 뜯어보며 고쳐보았습니다.  
-그런데 만들어진 프로젝트의 환경이 제가 진행하는 환경과 달라 마주하게 된 이슈들이 있었는데  이를 해결해보고 이해가 안되는 부분들을 주석 처리하며 공부하면서 진행하였습니다.
+그런데 만들어진 프로젝트의 환경이 제가 진행하는 환경과 달라 마주하게 된 이슈들이 있었는데   이를 해결해보고 이해가 안되는 부분들을 주석 처리하며 공부하면서 진행하였습니다.
 
 ## 사용기술 및 환경
 Spring boot, Gradle, JPA, Mysql, Java11, Window
@@ -34,12 +34,12 @@ Servlet.service() for servlet [dispatcherServlet] in context with path [] threw 
 오류메시지 전문
 For queries with named parameters you need to use provide names for method parameters. Use @Param for query method parameters, or when on Java 8+ use the javac flag -parameters.; nested exception is java.lang.IllegalStateException: For queries with named parameters you need to use provide names for method parameters. Use @Param for query method parameters, or when on Java 8+ use the javac flag -parameters.
 
-→CommentRepository에서 `articleId`를 찾지 못하여 테스트 실패 `@Param("articleId")` 어노테이션을 추가 하여 테스트 통과
+→CommentRepository에서 `articleId`를 찾지 못하여 테스트 실패  `@Param("articleId")` 어노테이션을 추가 하여 테스트 통과
 
 ### Issue4
-`CommentRepositoryTest`에서 “특정 닉네임의 모든 댓글 조회”에서  “Park”이라는 nickname으로 조회 테스트 중 오류 발생
+`CommentRepositoryTest`에서 “특정 닉네임의 모든 댓글 조회”에서 “Park”이라는 nickname으로 조회 테스트 중 오류 발생
 
 오류메시지 전문
 Could not locate ordinal parameter [1], expecting one of []; nested exception is java.lang.IllegalArgumentException: Could not locate ordinal parameter [1], expecting one of []
 
-→CommentRepository에서 `nickname` 찾지 못하여  `@Param("nickname")` 어노테이션을 추가 하여 테스트 통과
+→CommentRepository에서 `nickname` 찾지 못하여   `@Param("nickname")` 어노테이션을 추가 하여 테스트 통과
