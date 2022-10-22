@@ -64,7 +64,7 @@ public class ArticleService {
             return null;
         }
 
-        // 3.대상 삭제 후 응답 반환
+        // 3. 대상 삭제 후 응답 반환
         articleRepository.delete(target);
         return target;
     }

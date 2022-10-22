@@ -6,14 +6,14 @@ import lombok.*;
 import javax.persistence.*;
 
 @NoArgsConstructor // 파라미터가 아무것도 없는 디폴트 생성자 추가
-@AllArgsConstructor //생성자 주입 어노테이션
-@Entity // DB가 해당 객체를 인식 가능하게 함. (해당 클래스로 테이블을 만든다)
-@ToString //객체가 가지고 있는 정보나 값들을 문자열로 만들어 리턴
+@AllArgsConstructor // 생성자 주입하는 어노테이션
+@Entity // DB가 해당 객체를 인식 가능하게 함 (해당 클래스로 테이블을 만든다)
+@ToString // 객체가 가지고있는 정보나 값들을 문자열로 만들어 리턴
 @Getter
 public class Article {
 
     @Id // 대푯값으로 사용 (사람으로 치면 주민등록번호와 같음)
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // DB가 id를 자동생성 어노테이션
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // DB가 id를 자동생성하는 어노테이션
     private Long id;
 
     @Column //객체 필드를 테이블의 컬럼에 매핑시켜 줌

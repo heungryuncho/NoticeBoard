@@ -29,7 +29,7 @@ public class ArticleApiController {
     @GetMapping("/api/articles/{id}")
     public Article show(@PathVariable Long id) {
         return articleService.show(id);
-    } //타입이 List가 아닌 이유는 단일 반환,
+    } //타입이 List가 아닌 이유는 단일 반환
     // url 요청으로 id값을 가져올때는 @PathVariable 사용
 
     //POST
@@ -50,7 +50,7 @@ public class ArticleApiController {
         return (updated != null) ?
                 ResponseEntity.status(HttpStatus.OK).body(updated) :
                 ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        //ResponseEntity에 Article데이터가 담겨서 JSON으로 반환.
+        //ResponseEntity에 Article데이터가 담겨서 JSON으로 반환
     }
 
     //DELETE
