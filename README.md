@@ -1,5 +1,5 @@
 # :pushpin: CRUD 게시판 
->CRUD게시판
+>기본적인 CRUD게시판
 
 
 </br>
