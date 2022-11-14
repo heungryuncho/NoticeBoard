@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 //서비스는 음식점으로 치면 메인요리사!
 
-@Service //해당 클래스를 서비스로 인식하여 스프링 부트에 객제츨력 생성(등록)
+@Service //해당 클래스를 서비스로 인식하여 스프링 부트에 객체츨력 생성(등록)
 public class ArticleService {
 
     @Autowired
