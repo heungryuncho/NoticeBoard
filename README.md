@@ -109,21 +109,7 @@ Servlet.service() for servlet [dispatcherServlet] in context with path [] threw 
 → 구글 검색을 통해 의존성주입 `@Autowired` 안해주거나
 또는 application.properties에서 스프링 부트의 버전을 낮추어 실행하여 정상 작동하는 것을 확인하였습니다.
 
-### Issue3
-`CommentRepositoryTest`에서 “특정 게시글의 모든 댓글 조회”에서 4번 게시글 조회 테스트 중 오류 발생
 
-오류메시지 전문
-For queries with named parameters you need to use provide names for method parameters. Use @Param for query method parameters, or when on Java 8+ use the javac flag -parameters.; nested exception is java.lang.IllegalStateException: For queries with named parameters you need to use provide names for method parameters. Use @Param for query method parameters, or when on Java 8+ use the javac flag -parameters.
-
-→CommentRepository에서 `articleId`를 찾지 못하여 테스트 실패  `@Param("articleId")` 어노테이션을 추가 하여 테스트 통과
-
-### Issue4
-`CommentRepositoryTest`에서 “특정 닉네임의 모든 댓글 조회”에서 “Park”이라는 nickname으로 조회 테스트 중 오류 발생
-
-오류메시지 전문
-Could not locate ordinal parameter [1], expecting one of []; nested exception is java.lang.IllegalArgumentException: Could not locate ordinal parameter [1], expecting one of []
-
-→CommentRepository에서 `nickname` 찾지 못하여   `@Param("nickname")` 어노테이션을 추가 하여 테스트 통과
 
 
 </div>
