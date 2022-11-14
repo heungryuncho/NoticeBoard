@@ -1,7 +1,6 @@
 package com.example.noticeboard.repository;
 
 import com.example.noticeboard.entity.Article;
-import com.example.noticeboard.entity.Comment;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
