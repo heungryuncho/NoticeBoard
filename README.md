@@ -12,11 +12,9 @@
 
 ## 2. 사용 기술
 #### `Back-end`
-  - Java 11
   - Spring Boot 2.6.2
   - Gradle
   - Spring Data JPA
-  - H2
   - MySQL 8.0.3
 
 
