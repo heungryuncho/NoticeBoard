@@ -1,5 +1,6 @@
 # :pushpin: CRUD 게시판 
->기본적인 CRUD게시판
+>기본적인 CRUD기능을 구현하여  
+>GET, POST, PATCH, DELETE 메서드를 통해 조회,등록,수정, 삭제기능을 구현해보았습니다.
 
 
 </br>
